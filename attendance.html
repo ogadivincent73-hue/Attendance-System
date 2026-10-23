@@ -8,8 +8,6 @@
     <title>GOUNI | Attendance Portal Form</title>
     <link rel="icon" href="./gou.png" type="image/png">
     <link rel="stylesheet" href="attendance.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <script src=""></script>
 </head>
 
 <body>
@@ -29,7 +27,7 @@
                 Sign in with your student account to continue.
             </p>
 
-            <form class="form">
+            <form class="form" action="./dashboard.html" method="get">
 
                 <label for="email">Email Address</label>
                 <input
@@ -59,7 +57,7 @@
                     <a href="#" class="forgot">Forgot password?</a>
                 </div>
 
-                <button type="submit" class="btn" onclick="butt()"><a style="color: white; text-decoration: none;" href="./dashboard.html">Sign In <span>→</span></a></button>
+                <button type="submit" class="btn">Sign In <span>→</span></button>
 
             </form>
 
@@ -82,29 +80,6 @@
                     GREAT!!
                 </p>
             </div>
-
-        </div>
-
-    </div>
-
-</body>
-</html>
-<script>
-  let btn1 = document.getElementById("btn1")
-let email = document.getElementById("email")
-let password = document.getElementById("password")
-  let users = [];
-
-
-
-  
-  function butt(){
-  let user = {
-    Username:email.value,
-    password:password.value,
-   
-   
-  }
   users.push(user)
   console.log(users)
   
