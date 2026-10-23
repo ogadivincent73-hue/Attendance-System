@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GOUNI | Attendance Portal Form</title>
+    <link rel="icon" href="./gou.png" type="image/png">
+    <link rel="stylesheet" href="attendance.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src=""></script>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Left side: Login form -->
+        <div class="main">
+
+            <h2 class="logo">GOU<span>NI</span></h2>
+
+            <p class="welcome">WELCOME BACK.</p>
+
+            <h1 class="hed">Attendance Portal</h1>
+
+            <p class="subtitle">
+                Sign in with your student account to continue.
+            </p>
+
+            <form class="form">
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    class="inp1"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+
+                    class="inp2"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <div class="box">
+                    <label class="remember">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn" onclick="butt()"><a style="color: white; text-decoration: none;" href="./dashboard.html">Sign In <span>→</span></a></button>
+
+            </form>
+
+            <p class="footer">
+                GOUNI Attendance System FORM
+            </p>
+
+        </div>
+
+        <!-- Right side: Image -->
+        <div class="main2">
+
+            <img style="width: 100%; height: auto;" src="gou.png" alt="Godfrey Okoye University"
+                 class="img1">
+
+            <div class="image-text">
+                <h2>Learn. Grow. Excel.</h2>
+                <p>
+                    GO!!
+                    GREAT!!
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script>
+  let btn1 = document.getElementById("btn1")
+let email = document.getElementById("email")
+let password = document.getElementById("password")
+  let users = [];
+
+
+
+  
+  function butt(){
+  let user = {
+    Username:email.value,
+    password:password.value,
+   
+   
+  }
+  users.push(user)
+  console.log(users)
+  
+  }
+
+
+
+</script>
